@@ -4,7 +4,7 @@ from .models import User, Post, Comment
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['id', 'username', 'email']  # Exclude password field
 
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
