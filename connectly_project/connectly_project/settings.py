@@ -41,6 +41,8 @@ PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
 ]
 
+DEBUG = False
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 # Application definition
 INSTALLED_APPS = [ 
@@ -53,6 +55,7 @@ INSTALLED_APPS = [
     'rest_framework',  # Add Django REST Framework 
     'posts',
     'django_extensions',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
